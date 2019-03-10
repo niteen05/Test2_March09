@@ -20,7 +20,7 @@ public class MyApplicationTest {
 		myApp.setVersion("1.0");
 		myApp.setLastCommitSha("lastCommitsha");
 		
-		Assert.assertEquals("test Desc111", myApp.getDescription());
+		Assert.assertEquals("test Desc", myApp.getDescription());
 		Assert.assertEquals("1.0", myApp.getVersion());
 		Assert.assertEquals("lastCommitsha", myApp.getLastCommitSha());
 		
