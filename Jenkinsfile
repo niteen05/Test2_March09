@@ -4,7 +4,7 @@ node{
      git 'https://github.com/niteen05/Test2_March09'
      echo 'Checked Out : End';
    }
-   stage('Compile-Compile'){
+   stage('Compile-Package'){
       echo 'Compile-Package : Start';
       // Get maven home path
       def mvnHome =  tool name: 'maven3_6', type: 'maven'   
