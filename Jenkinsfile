@@ -13,8 +13,6 @@ node{
    }   
    try {
        	stage('Test-Junits') {
-   			def mvnHome =  tool name: 'maven3_6', type: 'maven'   
-   			sh "${mvnHome}/bin/mvn test"
    			echo 'Test-Junits : Start';
       		// Get maven home path
       		def mvnHome =  tool name: 'maven3_6', type: 'maven'   
