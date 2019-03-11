@@ -37,4 +37,11 @@ node{
       sh "${mvnHome}/bin/mvn package -Dskiptests"
       echo 'Package : End';
    }
+   stage('Build-Docker-Image'){
+   	  echo 'Build-Docker-Image : Start';
+      // Get maven home path
+      def mvnHome =  tool name: 'maven3_6', type: 'maven'   
+      sh "${mvnHome}/bin/mvn install dockerfile:build"
+      echo 'Build-Docker-Image : End';
+   }
   }
