@@ -8,7 +8,7 @@ node{
       echo 'Build-Compile : Start';
       // Get maven home path
       def mvnHome =  tool name: 'maven3_6', type: 'maven'   
-      sh "${mvnHome}/bin/mvn package"
+      sh "${mvnHome}/bin/mvn compile"
       echo 'Build-Compile : End';
    }   
    try {

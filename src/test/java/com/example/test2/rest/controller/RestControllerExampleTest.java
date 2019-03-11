@@ -17,7 +17,7 @@ public class RestControllerExampleTest {
 		RestControllerExample rest = new RestControllerExample();
 		MyApplication myApp = rest.healthCheck();
 
-		Assert.assertEquals("pre-interview technical test", myApp.getDescription());
+		Assert.assertEquals("pre-interview technical test111", myApp.getDescription());
 		Assert.assertEquals("1.0", myApp.getVersion());
 		Assert.assertEquals("xxyyzz123456", myApp.getLastCommitSha());
 
